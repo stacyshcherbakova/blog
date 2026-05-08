@@ -8,6 +8,26 @@ export interface Post {
 
 export const posts: Post[] = [
   {
+    slug: 'intel-homebrew-on-apple-silicon',
+    title: 'I was running Intel Homebrew on my Apple Silicon Mac for two years and had no idea',
+    date: '28 April 2026',
+    summary: 'A mildly horrifying tale of migrating to an M2 Mac, unknowingly keeping Intel Homebrew around, and only discovering it two years later.',
+    content: [
+      'So in 2023 I upgraded from a 2018 MacBook Pro 15-inch to a MacBook Pro 13-inch with the M2 Pro chip. I had a backup of my old MacBook on an SSD and just transferred everything over. Simple.',
+      'The thing is, I was a biomedical sciences student at the time. I had no idea there was even a meaningful difference between x86-64 and ARM. I just assumed a backup was a backup and got on with my life.',
+      'Spoiler: that was not the right call.',
+      'Two years later.',
+      'I installed OpenClaw and it flagged that my npm was Intel. That was the first time I even registered this could be a problem. I installed the Apple Silicon version of Homebrew (which lives at /opt/homebrew/) and OpenClaw started using that one and I kind of just... forgot about it again.',
+      'Then I tried to upgrade Neovim and Homebrew threw an error telling me it was Intel. So clearly not fully fixed.',
+      'What was actually happening.',
+      'I dug into it with a friend and we figured out that two versions of Homebrew had been living on my machine the whole time. My terminal was running the ARM version, but tmux and some other packages were installed under the Intel Homebrew, and for some reason that was the one being invoked.',
+      'We deleted the Intel version and went through Activity Monitor to make sure nothing was still running under Rosetta. Done.',
+      'Worth checking if you migrated the same way:',
+      'which brew\n# /opt/homebrew/bin/brew means Apple Silicon\n# /usr/local/bin/brew means you are on Intel Homebrew',
+      'Everything worked fine for two years so I never questioned it. That is kind of the worst part honestly.',
+    ],
+  },
+  {
     slug: 'my-first-post',
     title: 'My first post',
     date: '2 April 2026',
