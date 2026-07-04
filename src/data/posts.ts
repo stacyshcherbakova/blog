@@ -14,6 +14,32 @@ export interface Post {
 
 export const posts: Post[] = [
   {
+    slug: 'q2-2026-review',
+    title: 'Q2 2026 review',
+    date: '3 July 2026',
+    summary: 'A review of Q2 2026 — side quests and events around London, a string of rejections, joining Nucleate, inner peace, and the itch to start something of my own.',
+    content: [
+      { type: 'paragraph', text: 'Hello again.' },
+      { type: 'paragraph', text: 'We meet again on another Q2 review. This quarter was definitely richer in side quests, fun, and generally people who I have been able to meet along the way. I started writing this at the hackathon listening to some of the pitches last week in June, and I am finishing it up on the train on my way to KX now.' },
+      { type: 'heading', text: 'London' },
+      { type: 'paragraph', text: 'I love London. I have been having so much fun going to events, going on side quests. It is very tiring to travel, but it is so rewarding to meet new people as professional connections, but also as friends. I have met a couple of people who I can have banter with at the events.' },
+      { type: 'heading', text: 'Events' },
+      { type: 'paragraph', text: 'This is a recent thing, as the end of the quarter was very intense, filled with a bunch of events and the hackathon, but oh my lord I am tired. I am so sleep deprived. The heat at the same time did not help. If I had to choose, I would say the RL event by Project A at the end of April was by far the most fun. I met friends, found out some startup intel, and interrogated someone about what they do (it was all banter). Usually I am a lot more professional.' },
+      { type: 'paragraph', text: 'MaterialHack was an event which I was semi organising — I was helping a ton on the day, and I was even asked a computational question. I also did some interviews for Nucleate UK, asking people how they would use biomagnets if we had them.' },
+      { type: 'heading', text: 'Career' },
+      { type: 'paragraph', text: 'Q2 started off with complete impatience from me. I was waiting for an Encode application answer and also applied for the AI4Health PhD program. As of now, I have lost 0-2 to these applications. Was I sad? Not about Encode, but the PhD did hurt a little. I was not even invited for an interview. Encode felt like high stakes, and I completely expected not to be selected, though I did make it to the top 20% of applicants.' },
+      { type: 'paragraph', text: 'I have also applied for 30 other jobs which interested me, and have either received rejections or no replies. 0-3.' },
+      { type: 'paragraph', text: 'I also found out mid May that my boss is leaving. I would count it as 1-3 because I think it was a good thing overall. Another incredible thing that happened was me joining Nucleate! Though I still do not have an email, I have been warmly welcomed to the organisation as a volunteer. I do not have a set role yet, but I have contributed to some organisation (herding people) during some events, and mostly contributed at MaterialHack, which ran the last week of June. Was super tired but super rewarding. 2-3.' },
+      { type: 'heading', text: 'My inner peace' },
+      { type: 'paragraph', text: 'I have been able to become much calmer than I used to be. Not sure if it is my environment or the people I have met along the way, but I feel like I not only have the support network, but also very solid internal strength to keep going and not crash after failure. Yes, this feeling goes up and down, but the amplitude at which it happens is much lower than it used to be.' },
+      { type: 'heading', text: 'Recent crisis' },
+      { type: 'paragraph', text: "Despite the inner peace, with the chain of \"events\" (ha-ha) — having 5 back to back in the span of a week — I had a small crisis where I felt like I am among talent but my potential is not utilised. I feel like I put myself out there, but I am not actually unlocking that by doing work. So much talent around makes me very anxious, but I know I am on my own path, I know I should not compare myself to anyone, and I should keep the \"nothing is serious\" attitude, which has helped me a lot to not take things too seriously and get over rejections quicker. But it has been on my mind and I wanted to share it." },
+      { type: 'heading', text: 'What is to come?' },
+      { type: 'paragraph', text: "Q3 seems like the perfect time to work more, since there are more sunlight hours and the weather is nice. Quite frankly, I can see myself doing that, but I also need to make sure I don't waste my time on irrelevant things like events, boring work, etc. I would like to be a bit more conscious about where I go and how I spend my time." },
+      { type: 'paragraph', text: 'Also, quite frankly, I am on the edge of quitting my job and starting something on my own. This sounds ridiculous because I am here on a visa, but I guess nothing is stopping me from doing that on the side if I spend my time wisely.' },
+    ],
+  },
+  {
     slug: 'whats-been-going-on-april-2026',
     title: "What's been going on",
     date: '9 May 2026',
